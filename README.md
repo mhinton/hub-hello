@@ -2,7 +2,7 @@
 
 A minimal [Nuxt](https://nuxt.com) starter deployed on the Edge using [NuxtHub](https://hub.nuxt.com).
 
-https://hello.nuxt.dev
+<https://hello.nuxt.dev>
 
 <a href="https://hello.nuxt.dev">
 <img src="https://github.com/nuxt-hub/hello-edge/assets/904724/99d1bd54-ef7e-4ac9-83ad-0a290f85edcf" alt="Hello World template for NuxtHub" />
@@ -47,7 +47,6 @@ pnpm build
 
 ## Deploy
 
-
 Deploy the application on the Edge with [NuxtHub](https://hub.nuxt.com) on your Cloudflare account:
 
 ```bash
@@ -58,3 +57,7 @@ Then checkout your server logs, analaytics and more in the [NuxtHub Admin](https
 
 You can also deploy using [Cloudflare Pages CI](https://hub.nuxt.com/docs/getting-started/deploy#cloudflare-pages-ci).
 
+## Playwright Testing
+
+I used this repo as an example to get Playwright running.
+[playwright-nuxt3-e2e](https://github.com/story2Dev/playwright-nuxt3-e2e/tree/main)
