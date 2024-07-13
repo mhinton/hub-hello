@@ -8,19 +8,30 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "vitest",
+    "e2e": "npx playwright test",
+    "e2e:report": "npx playwright test --reporter dot",
+    "e2e:web": "npx playwright show-report"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.3.13",
-    "@nuxthub/core": "^0.7.0",
-    "nuxt": "^3.12.2",
+    "@nuxthub/core": "^0.7.1",
+    "nuxt": "^3.12.3",
     "vue": "^3.4.31",
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.3.13",
-    "eslint": "^9.5.0",
-    "vue-tsc": "^2.0.22",
-    "wrangler": "^3.62.0"
+    "@nuxt/test-utils": "^3.13.1",
+    "@playwright/test": "^1.45.1",
+    "@types/node": "^20",
+    "eslint": "^9.7.0",
+    "vitest": "^2.0.2",
+    "vue-tsc": "^2.0.26",
+    "wrangler": "^3.64.0"
+  },
+  "playwright": {
+    "testDir": "tests"
   }
 }
