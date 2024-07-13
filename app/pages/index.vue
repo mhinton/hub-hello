@@ -7,6 +7,10 @@ const color = useState('color', () => colors[Math.floor(Math.random() * colors.l
 <template>
   <div class="centered">
     <h1 :style="{ color }">{{ runtimeConfig.public.helloText }}</h1>
+    <section>
+      <p>Change the color by refreshing the page.</p>
+      <p>Current color: <code>{{ color }}</code></p>
+    </section>
     <NuxtLink to="/" external>refresh</NuxtLink>
   </div>
 </template>
